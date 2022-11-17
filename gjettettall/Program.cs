@@ -18,7 +18,6 @@ var rett = false;
 var gjettinger = 0;
 while(!rett)
 {
-    gjettinger++;
     Console.WriteLine("Skriv inn hvilket tall du tror programmet tenker på.");
     var gjtt = int.TryParse(Console.ReadLine(),out int num);
     if(!gjtt)
@@ -27,6 +26,7 @@ while(!rett)
     }
     else
     {
+        gjettinger++;
         if (num < tall)
         {
             Console.WriteLine("Tallet du skrev inn, er for lavt.");
